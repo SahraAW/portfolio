@@ -84,7 +84,7 @@ text h2{
 }
 
 .hobby-section {
-    background-color: white;
+
     padding: 50px 20px;
     margin: 30px auto;
     max-width: 1200px;
@@ -140,3 +140,45 @@ text h2{
     color: saddlebrown;
     margin: 0;
 }
+/* Light Mode (default) */
+body {
+    background-color: #f0f0f0; /* Lys baggrund */
+    color: #333; /* Mørk tekst */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+    color: saddlebrown; /* Farve på links i lys tilstand */
+}
+
+.theme-btn {
+    background-color: #333;
+    color: white;
+}
+
+/* Dark Mode styling */
+.dark-mode body {
+    background-color: #121212; /* Mørk baggrund */
+    color: #f0f0f0; /* Lys tekst */
+}
+
+/* Sektioner og header i Dark Mode */
+.dark-mode header,
+.dark-mode .hobby-section,
+.dark-mode .intro,
+.dark-mode.hobby-box,
+.dark-mode.hobby-container
+{
+    background-color: #1e1e1e; /* Mørkere baggrund for sektioner */
+    color: #f0f0f0; /* Lys tekst */
+}
+
+/* Links i Dark Mode */
+.dark-mode a {
+    color: #ffcc80; /* Lys farve til links */
+}
+
+/* Knappen skifter også farve i Dark Mode */
+.dark-mode .theme-btn {
+    background-color: #f0f0f0;
+    color: #333}
